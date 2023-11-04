@@ -1,0 +1,17 @@
+package edu.dickens.dickens.controller
+
+import edu.dickens.dickens.model.Student
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
+
+@RestController
+@RequestMapping("/student")
+class StudentController {
+
+    @GetMapping
+    fun getAll(): List<Student>{
+        return listOf(
+        )
+    }
+}
